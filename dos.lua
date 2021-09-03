@@ -1,6 +1,12 @@
 -- DOSva
 -- contains logic for DOS bash replacement
 
+
+
+
+package.cpath = package.cpath .. ";" .. os.getenv("DOSHOME") .. "/?.so" 
+
+
 require "libdos"
 
 print("DOS-BASH [Free Software Version 1.1]\nCopyright (C) nobody 2021-2021");
