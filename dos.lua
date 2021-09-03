@@ -4,7 +4,7 @@
 
 
 
-package.cpath = package.cpath .. ";" .. os.getenv("DOSHOME") .. "/?.so" 
+package.cpath = package.cpath .. ";" .. os.getenv("DOSLIB") .. "/?.so" 
 
 
 require "libdos"

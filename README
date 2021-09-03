@@ -27,6 +27,7 @@ export PATH=$PATH:/path/to/DOSva/bin/
 
 export DOSHOME="/path/to/DOSva"
 
+export DOSLIB="/path/to/DOSva"
 The reason we set home variables, is because we want to use DOSva anywhere.
 
 After, you've installed the DOSVA command processor, you can simply type "DOS" and it will run.
