@@ -20,7 +20,7 @@ void main(string[] args)
     } else { chdir(ndir); }
   }
   if (nhelp) {
-   writeln(args[0]~": usage: "~args[0]~" [-rhnc]");
+   writeln(args[0]~": usage: "~args[0]~" [-rhnc] [--change-working-directory=true --new-directory=DIR]");
   }
   if (initialize_fs) {
    writeln("to load into initramfs, please run the ./initramfs file.");

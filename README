@@ -1,0 +1,9 @@
+COMMANDS
+
+=========
+
+dos --help | dos -h : help menu
+
+dos --change-working-directory=TRUE|FALSE | dos -c : changes working directory of DOS. calls chdir() before running DOS
+
+dos --new-directory=DIR | dos -n : Should be used with -c to change the directory. Must have a dos.lua script in the directory.
