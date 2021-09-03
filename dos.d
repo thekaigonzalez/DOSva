@@ -17,7 +17,7 @@ void main(string[] args)
   if (change_dir) {
     if (ndir == "none") {
      writeln("'DIR' Option required. '-h OR --help for help.");
-    } else { chdir(ndir); }
+    } else { try { chdir(ndir); } catch (Exception e) { writeln("error: directory not legitimate, '"~ndir~"'");  } }
   }
   if (nhelp) {
    writeln(args[0]~": usage: "~args[0]~" [-rhnc] [--change-working-directory=true --new-directory=DIR]");

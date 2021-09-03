@@ -44,9 +44,9 @@ while true  do
 	chdir(opt_a[1]);
     elseif opt_a[0] == "help" or opt_a[0] == "HELP" then
 	if opt_a[1] == "initramfs" then
-	 print("DOS [VA]")
+	 print("DOS [VA0-host]")
 	 print("-------- initramfs --------");
-	 print("initramfs - Pre-Terminal for DOSva")
+	 print("initramfs - Pre-Terminal for DOSva\n\ninitramfs is a pre-terminal binary located in the DOSva source code. Written in D, it contains a bunch of low level commands to aid in the development process of your DOSva version.\n")
 	end
         print("DOS [running on VA 0, host]")
 	print("\n-------------- Builtins -----------------");
