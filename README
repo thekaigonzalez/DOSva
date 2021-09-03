@@ -7,3 +7,28 @@ dos --help | dos -h : help menu
 dos --change-working-directory=TRUE|FALSE | dos -c : changes working directory of DOS. calls chdir() before running DOS
 
 dos --new-directory=DIR | dos -n : Should be used with -c to change the directory. Must have a dos.lua script in the directory.
+
+
+==========
+
+I N S T A L L A T I O N
+
+==========
+
+To install DOS VA, First you need to set up the Terminal.
+
+This method will describe one of the ways you can install DOSVA.
+
+First you need to setup the CP. (Command Processor)
+
+You can use the following commands to install the COMMAND PROCESSOR onto PATH.
+
+export PATH=$PATH:/path/to/DOSva/bin/
+
+export DOSHOME="/path/to/DOSva"
+
+The reason we set home variables, is because we want to use DOSva anywhere.
+
+After, you've installed the DOSVA command processor, you can simply type "DOS" and it will run.
+
+(this method also allows you to mess with the `initramfs` unit)
