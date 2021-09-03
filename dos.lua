@@ -3,7 +3,7 @@
 
 require "libdos"
 
-print("DOS-BASH v1.0 [Free Software Version 1.0]\nCopyright (C) nobody 2021-2021");
+print("DOS-BASH [Free Software Version 1.1]\nCopyright (C) nobody 2021-2021");
 
 
 --- Low level split & higher level split
@@ -41,7 +41,20 @@ while true  do
     local opt_a = split(strf)
    
     if opt_a[0] == "cd" then
-	chdir(opt_a[1]);  
+	chdir(opt_a[1]);
+    elseif opt_a[0] == "help" or opt_a[0] == "HELP" then
+	if opt_a[1] == "initramfs" then
+	 print("DOS [VA]")
+	 print("-------- initramfs --------");
+	 print("initramfs - Pre-Terminal for DOSva")
+	end
+        print("DOS [running on VA 0, host]")
+	print("\n-------------- Builtins -----------------");
+	print("HELP - Sends the 'help' menu.");
+	print("\nDOS VA is a shell terminal emulator with native shell support.")
+	print("It is inspired off of the MS-DOS interpreter.");
+	print("Pretty statement editing is not supported.")
+	print("if you need to use statement editing, either use it in one line, or use a highly recommended BASH interpreter.")
     else
         os.execute(strf)
   end
